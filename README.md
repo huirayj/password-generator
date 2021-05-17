@@ -1,7 +1,7 @@
 # password-generator
 
 #Overview
-In the following exercise, when the "Generate Password" button is clicked, the user is asked to input a desired length, whether the password would include uppercase, lowercase, numbers, and/or special characters, and a random password is created based off selected choices. Functions, arrays, if/else statements, "for" loops, and Math.random() were emphasized in making this project work.
+In the following exercise, when the "Generate Password" button is clicked, the user is asked to input a desired length, whether the password would include uppercase, lowercase, numbers, and/or special characters, and then a password is randomly created based off those selected choices. Functions, arrays, if/else statements, "for" loops, and Math.random() were emphasized in making this project work.
 
 #Links
 - https://github.com/huirayj/password-generator
