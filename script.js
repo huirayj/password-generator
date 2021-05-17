@@ -23,9 +23,55 @@ var userChoice = {
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+  // checks if user selected any types
+  if (Array.isArray(charArr) && charArr.length) {
+    passwordText.value = password;
+    // exit option cont'd
+  } else if (input === null) {
+  } else {
+    if (confirm("You did not select any type of characters for your password. Would you like to try again?")) {
+      promptUserChoice();
+    } else {
+      alert("Understandable, have a great day.");
+    }
+  }
+}
 
-  passwordText.value = password;
+function generatePassword() {
+  var passArr = [];
+  var guaranteedArr = [];
+  // random indexes to select a random character from their respective pool
+  var upperRandx = Math.floor(Math.random() * upperCase.length);
+  var lowerRandx = Math.floor(Math.random() * lowerCase.length);
+  var numRandx = Math.floor(Math.random() * num.length);
+  var specialRandx = Math.floor(Math.random() * specialChar.length);
+  
+  if (userChoice.choiceUpper) {
+    guaranteedArr.push(upperCase[upperRandx]);
+  }
+  if (userChoice.choiceLower) {
+    guaranteedArr.push(lowerCase[lowerRandx]);
+  }
+  if (userChoice.choiceNum) {
+    guaranteedArr.push(num[numRandx]);
+  }
+  if (userChoice.choiceSpecial) {
+    guaranteedArr.push(specialChar[specialRandx]);
+  }
+  // randomly generates the remaining characters
+  for (var i = 0; i < userPassLength; i++) {
+    var charRandx = Math.floor(Math.random() * charArr.length);
 
+    passArr.push(charArr[charRandx]);
+  }
+  // randomly inserts guaranteed characters into passArr
+  for (var i = 0; i < guaranteedArr.length; i++) {
+    var passIdx = Math.floor(Math.random() * passArr.length);
+    
+    passArr.splice(passIdx, 0, guaranteedArr[i]);
+  }
+  
+  return passArr.join('');
 }
 
 function promptUserChoice() {
