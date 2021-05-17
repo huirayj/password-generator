@@ -137,6 +137,7 @@ function promptUserChoice() {
     promptUserChoice();
   }
 }
+
 // creates a pool of characters based on their utf-8 decimal values
 function generatePool(length, start) {
   var result = [];
