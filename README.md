@@ -1,13 +1,13 @@
 # password-generator
 
-#Overview
+# Overview
 In the following exercise, when the "Generate Password" button is clicked, the user is asked to input a desired length, whether the password would include uppercase, lowercase, numbers, and/or special characters, and then a password is randomly created based off those selected choices. Functions, arrays, if/else statements, "for" loops, and Math.random() were emphasized in making this project work.
 
-#Links
+# Links
 - https://github.com/huirayj/password-generator
 
 
-#Resouces
+# Resouces
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
 - https://www.tutorialspoint.com/javascript/javascript_ifelse.htm
@@ -17,5 +17,5 @@ In the following exercise, when the "Generate Password" button is clicked, the u
 - https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 - https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
 
-#Screenshots
+# Screenshots
 
