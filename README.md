@@ -3,6 +3,14 @@
 # Overview
 In the following exercise, a random password was created based off the user's choice of character length and whether the password would include uppercase, lowercase, numbers, and/or special characters. Functions, arrays, if/else statements, "for" loops, and Math.random() were emphasized in making this project work.
 
+# Pseudocode
+1. Creating a user prompt for length and other choices.
+2. Storing those choices and adjusting the code around them.
+3. Creating a bank to store user-decided characters.
+4. Creating another bank for guaranteed characters and offsetting the password length.
+5. Randomly generating the password.
+6. Randomly generating the guaranteed characters and randomly inserting them into the password.
+
 # Links
 - https://github.com/huirayj/password-generator
 
@@ -19,4 +27,4 @@ In the following exercise, a random password was created based off the user's ch
 - https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
 
 # Screenshots
-
+![20 Character password and user prompt]https://github.com/huirayj/password-generator/blob/main/assets/screenshots/screenshot-pwg-app.png
