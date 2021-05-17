@@ -12,6 +12,7 @@ In the following exercise, a random password was created based off the user's ch
 6. Randomly generating the guaranteed characters and randomly inserting them into the password.
 
 # Links
+- https://huirayj.github.io/password-generator/
 - https://github.com/huirayj/password-generator
 
 
@@ -27,4 +28,4 @@ In the following exercise, a random password was created based off the user's ch
 - https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
 
 # Screenshots
-![20 Character password and user prompt]https://github.com/huirayj/password-generator/blob/main/assets/screenshots/screenshot-pwg-app.png
+![A 20 character password and user prompt](https://github.com/huirayj/password-generator/blob/main/assets/screenshots/screenshot-pwg-app.png)
