@@ -1,5 +1,23 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var input;
+var userPassLength;
+var charArr = [];
+// generates pools of characters in their respective type
+var allChar = generatePool(95, 32);
+var upperCase = generatePool(26, 65);
+var lowerCase = generatePool(26, 97);
+var num = generatePool(10, 48);
+var specialChar = generatePool(16, 32).concat(generatePool(7, 58))
+                                      .concat(generatePool(6, 91))
+                                      .concat(generatePool(4, 123));
+// stores user's choice
+var userChoice = {
+  choiceUpper: false,
+  choiceLower: false,
+  choiceNum: false,
+  choiceSpecial: false
+};
 
 // Write password to the #password input
 function writePassword() {
@@ -73,6 +91,16 @@ function promptUserChoice() {
     promptUserChoice();
   }
 }
+// creates a pool of characters based on their utf-8 decimal values
+function generatePool(length, start) {
+  var result = [];
+
+  for (var i = 0; i < length; i++) {
+    result.push(String.fromCharCode(i + start));
+  }
+  return result;
+}
 
 // Add event listener to generate button
+generateBtn.addEventListener("click", promptUserChoice);
 generateBtn.addEventListener("click", writePassword);
