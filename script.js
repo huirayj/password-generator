@@ -2,6 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 var input;
 var userPassLength;
+// store all potential characters
 var charArr = [];
 // generates pools of characters in their respective type
 var allChar = generatePool(95, 32);
