@@ -4,7 +4,7 @@
 
 In the following exercise, a random password was created based off the user's choice of character length and whether the password would include uppercase, lowercase, numbers, and/or special characters. Functions, arrays, if/else statements, "for" loops, and Math.random() were emphasized in making this project work.
 
-Table of Contents
+## Table of Contents
   - [Pseudocode](#pseudocode)
   - [Installation](#installation)
   - [Usage](#usage)
